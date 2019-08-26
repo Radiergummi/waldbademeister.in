@@ -1,4 +1,6 @@
-# Hugo template for Netlify CMS with Netlify Identity
+Waldbademeister.in [![Netlify Status](https://api.netlify.com/api/v1/badges/6fbceca2-5dd0-40d7-98ca-d0b15e8cad92/deploy-status)](https://app.netlify.com/sites/waldbademeisterin/deploys)
+==================
+
 
 This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
 
