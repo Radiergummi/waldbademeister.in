@@ -1,12 +1,17 @@
-<section class="hero">
+<section class="hero" {{ if $.image }}style="background-image: url({{ $.image }})"{{ end }}>
     <header class="hero-header">
         <h1 class="hero-title">
-            {{.title}}
+            {{ $.title | safeHTML }}
         </h1>
     </header>
-    {{ if .subtitle }}
-    <p class="hero-subtitle">
-        {{.subtitle}}
-    </p>
+    {{ if $.subtitle }}
+        <p class="hero-subtitle">
+            {{ $.subtitle }}
+        </p>
+    {{ end }}
+    {{ if $.cta }}
+        <div class="cta-container">
+            <button class="button button-alt cta">{{ $.cta }}</button>
+        </div>
     {{ end }}
 </section>

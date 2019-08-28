@@ -1,5 +1,6 @@
 @import "fonts/_hk-grotesk.css";
 @import "_variables.css";
+@import "modules/_buttons.css";
 @import "modules/_navigation.css";
 @import "modules/_hero.css";
 
@@ -8,9 +9,7 @@
 }
 
 html {
-  background:      var(--color-primary) url(/img/background.jpg) no-repeat top center;
-  background-size: cover;
-  font-family:     var(--font-family-primary);
+  font-family: var(--font-family-primary);
 }
 
 body {
