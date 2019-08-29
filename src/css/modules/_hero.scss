@@ -7,24 +7,39 @@
   flex-direction:  column;
   justify-content: center;
   align-items:     center;
-  color:           rgb(var(--color-white));
-  text-shadow:     0 0 25px rgba(0, 0, 0, 0.1),
-                   0 0 1px rgba(0, 0, 0, 0.1);
+  color:           #fff;
   text-align:      center;
   overflow:        hidden;
 
   .hero-title {
-    font-size: var(--font-size-title);
+    font-size:   var(--font-size-title);
+    margin:      0;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+                 0 0 1px rgba(0, 0, 0, 0.1);
   }
 
   .hero-subtitle {
-    font-size:   var(--font-size-large);
+    font-size:   var(--font-size-subtitle);
     line-height: var(--line-height-base);
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+                 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-container {
+    margin-top: 5rem;
   }
 
   .scroll-indicator-container {
     position: absolute;
     bottom:   $spacing-base * 2;
+  }
+
+  .scroll-indicator {
+    animation: hover 1s infinite alternate;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
   .hero-background-container {
@@ -41,4 +56,5 @@
     will-change:         transform;
   }
 }
+
 

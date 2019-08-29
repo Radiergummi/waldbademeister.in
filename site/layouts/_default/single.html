@@ -1,4 +1,5 @@
 {{ define "main" }}
-    {{ partial "jumbotron" (dict "title" .Page.Title "subtitle" .Page.Params.Subtitle "image" .Page.Params.Image) }}
+    {{ partial "jumbotron" (dict "title" $.Page.Title "subtitle" $.Page.Params.Subtitle "image" $.Page.Params.Image "date" $.Page.Lastmod) }}
     {{ partial "content" (dict "content" $.Content) }}
 {{ end }}
+

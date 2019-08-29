@@ -1,5 +1,6 @@
 ---
 title: "Die Wald&shy;bade&shy;meisterin"
+subtitle: "Lernen Sie eine einzigartige Methode zur Entspannung kennen"
 image: "/img/forest.jpg"
 cta: "Termin vereinbaren"
 ---

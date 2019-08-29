@@ -14,6 +14,12 @@
     line-height:    var(--line-height-narrow);
     margin:         ($spacing-base * 2) 0 ($spacing-base * 0.5);
 
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  h2, h3 {
     &::after {
       content:          '';
       display:          block;
@@ -24,15 +30,11 @@
       height:           2px;
       background-color: rgb(var(--color-gray));
     }
-
-    & + p {
-      margin-top: 0;
-    }
   }
 
   a {
-    display:          inline-block;
-    padding:          0 0.5rem;
+    display:          inline;
+    padding:          0.25rem 0.5rem;
     border-radius:    3px;
     color:            currentColor;
     text-decoration:  none;
@@ -41,7 +43,7 @@
 
     &:hover {
       border-radius: 3px 3px 0 0;
-      box-shadow:    inset 0 -6px 0 -2px rgba(var(--color-primary), 0.5);
+      box-shadow:    inset 0 -5px 0 -2px rgba(var(--color-primary), 0.5);
     }
   }
 }

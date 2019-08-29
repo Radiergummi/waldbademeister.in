@@ -31,8 +31,8 @@ Stand: 29. August 2019
  - [Änderung und Aktualisierung der Datenschutzerklärung](#änderung-und-aktualisierung-der-datenschutzerklärung)
  - [Rechte der betroffenen Personen](#rechte-der-betroffenen-personen)
  - [Begriffsdefinitionen](#begriffsdefinitionen)
- 
- ## Verantwortlicher
+
+## Verantwortlicher
 Verena Friedrich   
 Hauptstraße 53  
 79183 Waldkirch
@@ -253,7 +253,7 @@ regional verteilter und über das Internet verbundener Server schneller und sich
  - **Zwecke der Verarbeitung:** Content Delivery Network (CDN).
  - **Rechtsgrundlagen:** Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
 
-**Eingesetzte Dienste und Diensteanbieter:**  
+### Eingesetzte Dienste und Diensteanbieter:
  - **Cloudflare:** Content-Delivery-Network (CDN); Dienstanbieter: Cloudflare, Inc., 101 Townsend St, San Francisco, 
    CA 94107, USA; Website:
    [https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&amp;status=Active](https://www.cloudflare.com).
@@ -319,7 +319,7 @@ Datenschutzerklärung hinweisen.
     3. USA: [https://www.aboutads.info/choices](https://www.aboutads.info/choices). 
     4. Gebietsübergreifend: [http://optout.aboutads.info](http://optout.aboutads.info).
 
-**Eingesetzte Dienste und Diensteanbieter:**  
+### Eingesetzte Dienste und Diensteanbieter:
  - **Google Tag Manager:** Google Tag Manager ist eine Lösung, mit der wir sog. Website-Tags über eine Oberfläche 
    verwalten können (und so z.B. Google Analytics sowie andere Google-Marketing-Dienste in unser Onlineangebot 
    einbinden). Der Tag Manager selbst (welches die Tags implementiert) verarbeitet keine personenbezogenen Daten der 
@@ -368,7 +368,7 @@ dann können Sie sich an uns wenden.
    Besucher).
  - **Rechtsgrundlagen:** Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
 
-**Eingesetzte Dienste und Diensteanbieter:**  
+### Eingesetzte Dienste und Diensteanbieter:
  - **Instagram :** Soziales Netzwerk; Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA; 
    Website: [http://instagram.com/about/legal/privacy](https://www.instagram.com).
  - **Facebook:** Soziales Netzwerk; Dienstanbieter: Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, 
@@ -404,7 +404,7 @@ Datenschutzerklärung hinweisen.
    und Service.
  - **Rechtsgrundlagen:** Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
 
-**Eingesetzte Dienste und Diensteanbieter:**  
+### Eingesetzte Dienste und Diensteanbieter:
  - **Google Fonts:** Wir binden die Schriftarten ("Google Fonts") des Anbieters Google ein, wobei die Daten der Nutzer 
    allein zu Zwecken der Darstellung der Schriftarten im Browser der Nutzer verwendet werden. Die Einbindung erfolgt auf
    Grundlage unserer berechtigten Interessen an einer technisch sicheren, wartungsfreien und effizienten Nutzung von
@@ -441,7 +441,8 @@ sonstige individuelle Benachrichtigung erforderlich wird.
 
 ## Rechte der betroffenen Personen
 Ihnen stehen als Betroffene nach der DSGVO verschiedene Rechte zu, die sich insbesondere aus Art. 15 bis 18 und 21 
-DSGVO ergeben:
+DSGVO ergeben:  
+
  - **Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit 
    gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e oder f
    DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling. Werden 
