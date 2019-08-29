@@ -1,6 +1,4 @@
 {{ define "main" }}
-
-{{ partial "hero" (dict "imageUrl" .Page.Params.Image "title" .Page.Title "subtitle" .Page.Params.Subtitle) }}
-{{ .Content }}
-
+    {{ partial "jumbotron" (dict "title" .Page.Title "subtitle" .Page.Params.Subtitle "image" .Page.Params.Image) }}
+    {{ partial "content" (dict "content" $.Content) }}
 {{ end }}

@@ -1,0 +1,17 @@
+@mixin font-face($family, $file, $style-name, $style, $weight) {
+  $filepath: "../fonts/#{$file}-#{$style-name}";
+
+  @if ($style != normal) {
+    $filepath: $filepath + $style;
+  }
+
+  @font-face {
+    font-family: "#{$family}";
+    src:         url("#{$filepath}.eot");
+    src:         url("#{$filepath}.eot?#iefix") format('embedded-opentype'),
+                 url("#{$filepath}.woff") format('woff'),
+                 url("#{$filepath}.woff2") format('woff2');
+    font-weight: $weight;
+    font-style:  $style;
+  }
+}

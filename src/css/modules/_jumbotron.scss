@@ -1,0 +1,23 @@
+.jumbotron {
+  display:             flex;
+  justify-content:     center;
+  align-items:         flex-end;
+  padding:             calc(10vh + #{$spacing-base * 4}) 4rem 4rem;
+  background-size:     cover;
+  background-position: center center;
+  background-repeat:   no-repeat;
+  color:               rgb(var(--color-white));
+  text-shadow:         0 0 25px rgba(0, 0, 0, 0.2),
+                       0 0 1px rgba(0, 0, 0, 0.25);
+
+  .jumbotron-title {
+    margin:    0;
+    font-size: var(--font-size-title);
+  }
+
+  .jumbotron-wrapper {
+    flex:      1 1 auto;
+    max-width: var(--content-width);
+    padding:   0 $spacing-base;
+  }
+}

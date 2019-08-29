@@ -1,0 +1,15 @@
+@import "../functions/font-face";
+
+@include font-face('HK Grotesk', 'hkgrotesk', 'light', normal, 200);
+@include font-face('HK Grotesk', 'hkgrotesk', 'light', italic, 200);
+
+@include font-face('HK Grotesk', 'hkgrotesk', 'regular', normal, 300);
+
+@include font-face('HK Grotesk', 'hkgrotesk', 'medium', normal, 400);
+@include font-face('HK Grotesk', 'hkgrotesk', 'medium', italic, 400);
+
+@include font-face('HK Grotesk', 'hkgrotesk', 'semibold', normal, 500);
+@include font-face('HK Grotesk', 'hkgrotesk', 'semibold', italic, 500);
+
+@include font-face('HK Grotesk', 'hkgrotesk', 'bold', normal, 700);
+@include font-face('HK Grotesk', 'hkgrotesk', 'bold', italic, 700);

@@ -1,0 +1,6 @@
+{{ define "main" }}
+    {{ partial "jumbotron" (dict "title" $.Title "subtitle" $.Params.subtitle "image" $.Params.image) }}
+
+    {{ partial "content" (dict "content" $.Content) }}
+{{ end }}
+

@@ -1,0 +1,16 @@
+/**
+ * Override functions for the built-in rgb and rgba helpers. They don't seem to play nice with CSS variables, so these
+ * functions act as simple pass-through variants.
+ */
+
+@function rgb($color) {
+  @return #{rgb}#{'('}#{$color}#{')'};
+}
+
+@function rgba($colorOrRed, $alphaOrGreen, $blue: null, $alpha: null) {
+  @if ($blue) {
+    @return #{rgba}#{'('}#{$colorOrRed}, #{$alphaOrGreen}, #{$blue}, #{$alpha}#{')'};
+  }
+
+  @return #{rgba}#{'('}#{$colorOrRed}, #{$alphaOrGreen}#{')'};
+}

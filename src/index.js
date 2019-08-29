@@ -1,7 +1,14 @@
-// JS Goes here - ES6 supported
+import './css/main.scss';
 
-import "./css/main.css";
+window.document.addEventListener('DOMContentLoaded', () => init(window));
 
-// Say hello
-// eslint-disable-next-line no-console
-console.log("🦊 Hello! Edit me in src/index.js");
+
+function init(global) {
+  const mainContentElement    = global.document.querySelector('.main-content');
+  const scrollIndicatorButton = global.document.querySelector('.scroll-indicator');
+
+  scrollIndicatorButton.addEventListener('click', () => {
+    mainContentElement.scrollIntoView();
+    // global.scrollTo(0, window.innerHeight);
+  });
+}

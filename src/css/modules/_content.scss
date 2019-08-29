@@ -1,0 +1,53 @@
+.main-content {
+  line-height: var(--line-height-wide);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-light);
+  font-size:   var(--font-size-large);
+  color:       rgb(var(--color-gray-dark));
+  background:  rgb(var(--color-white));
+
+  h2, h3, h4, h5, h6 {
+    position:       relative;
+    display:        block;
+    padding-bottom: $spacing-base * 0.5;
+    font-family:    var(--font-family-primary);
+    line-height:    var(--line-height-narrow);
+    margin:         ($spacing-base * 2) 0 ($spacing-base * 0.5);
+
+    &::after {
+      content:          '';
+      display:          block;
+      position:         absolute;
+      left:             0;
+      bottom:           0;
+      width:            6rem;
+      height:           2px;
+      background-color: rgb(var(--color-gray));
+    }
+
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    display:          inline-block;
+    padding:          0 0.5rem;
+    border-radius:    3px;
+    color:            currentColor;
+    text-decoration:  none;
+    background-color: rgba(var(--color-primary), 0.125);
+    transition:       all var(--transition-duration-base);
+
+    &:hover {
+      border-radius: 3px 3px 0 0;
+      box-shadow:    inset 0 -6px 0 -2px rgba(var(--color-primary), 0.5);
+    }
+  }
+}
+
+.content-wrapper {
+  max-width: var(--content-width);
+  margin:    0 auto;
+  padding:   ($spacing-base * 4) $spacing-base;
+}

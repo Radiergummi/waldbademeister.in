@@ -1,0 +1,28 @@
+@import "functions/_color-functions.scss";
+@import "fonts/_hk-grotesk.scss";
+@import "_variables.scss";
+@import "modules/_buttons.scss";
+@import "modules/_navigation.scss";
+@import "modules/_footer.scss";
+@import "modules/_hero.scss";
+@import "modules/jumbotron.scss";
+@import "modules/_content.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family:     var(--font-family-primary);
+  scroll-behavior: smooth;
+  font-size:       100%;
+  text-rendering:  optimizeLegibility;
+}
+
+body {
+  margin:         0;
+  padding:        0;
+  min-height:     100vh;
+  display:        flex;
+  flex-direction: column;
+}

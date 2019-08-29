@@ -1,0 +1,55 @@
+.main-footer {
+  background-color:    rgb(var(--color-green));
+  background-position: center center;
+  background-size:     cover;
+
+  .footer-navigation {
+    display:         flex;
+    justify-content: center;
+    padding:         $spacing-base $spacing-base ($spacing-base * 4) $spacing-base;
+    color:           rgb(var(--color-white));
+
+    @supports (backdrop-filter: blur(var(--blur-amount))) {
+      background-color: rgba(var(--color-black), 0.25);
+      backdrop-filter:  blur(var(--blur-amount));
+    }
+
+    &-links {
+      flex:            1 1 100%;
+      max-width:       var(--content-width);
+      display:         flex;
+      flex-direction:  column;
+      justify-content: space-between;
+      align-items:     center;
+
+      @media screen and (min-width: 500px) {
+        flex-direction: row;
+      }
+    }
+
+    &-column {
+      display:        flex;
+      flex-direction: column;
+      height:         100%;
+      padding:        ($spacing-base * 2) 0;
+
+      @media screen and (min-width: 500px) {
+        padding: 0;
+      }
+    }
+
+    &-link {
+      display:         block;
+      padding:         $spacing-base * 0.25;
+      color:           inherit;
+      text-decoration: none;
+      text-align:      center;
+    }
+
+    &-subheading {
+      margin-bottom:  $spacing-base;
+      font-weight:    var(--font-weight-black);
+      text-transform: lowercase;
+    }
+  }
+}

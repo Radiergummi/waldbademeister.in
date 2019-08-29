@@ -1,4 +1,7 @@
-<section class="hero" {{ if $.image }}style="background-image: url({{ $.image }})"{{ end }}>
+<section class="hero">
+    {{ if $.image }}
+        <div class="hero-background-container" style="background-image: url({{ $.image }})"></div>
+    {{ end }}
     <header class="hero-header">
         <h1 class="hero-title">
             {{ $.title | safeHTML }}
@@ -14,4 +17,8 @@
             <button class="button button-alt cta">{{ $.cta }}</button>
         </div>
     {{ end }}
+
+    <div class="scroll-indicator-container">
+        <button class="button button-icon scroll-indicator">↓</button>
+    </div>
 </section>

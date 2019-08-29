@@ -1,0 +1,24 @@
+.main-navigation {
+  position:         fixed;
+  top:              0;
+  display:          flex;
+  justify-content:  center;
+  width:            100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter:  blur(var(--blur-amount));
+  z-index:          1;
+
+  .navigation-links {
+    display:         flex;
+    justify-content: center;
+    padding:         $spacing-base;
+
+    .navigation-link {
+      padding:         $spacing-base ($spacing-base * 2);
+      text-decoration: none;
+      color:           var(--color-text);
+
+    }
+  }
+}
+

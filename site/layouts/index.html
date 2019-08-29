@@ -1,3 +1,5 @@
 {{ define "main" }}
-{{ partial "hero" (dict "imageUrl" $.Params.image "title" $.Title "subtitle" $.Params.subtitle "image" $.Params.image "cta" $.Params.cta) }}
+    {{ partial "hero" (dict "title" $.Title "subtitle" $.Params.subtitle "image" $.Params.image "cta" $.Params.cta) }}
+
+    {{ partial "content" (dict "content" $.Content) }}
 {{ end }}
