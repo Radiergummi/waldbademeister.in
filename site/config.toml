@@ -1,5 +1,5 @@
-#baseurl = "https://www.waldbademeister.in/"
-baseurl = "http://localhost:3000/"
+baseurl = "https://www.waldbademeister.in/"
+# baseurl = "http://localhost:3000/"
 languageCode = "de-DE"
 languageLang = "de"
 title = "Die Waldbademeisterin"
