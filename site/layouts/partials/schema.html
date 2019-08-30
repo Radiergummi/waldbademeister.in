@@ -1,0 +1,32 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "{{ $.Site.Title }}",
+        "url": {{ $.Site.BaseURL | absURL }}
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "{{ $.Site.Title }}",
+        {{ if $.Params.image }}"image": {{ $.Params.image | absURL }},{{ end }}
+        "@id": "",
+        "url": {{ $.Site.BaseURL | absURL }},
+        "telephone": "",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Hauptstraße 53",
+            "addressLocality": "Waldkirch",
+            "postalCode": "79183",
+            "addressCountry": "DE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.1041228,
+            "longitude": 7.972745400000008
+        }
+    }
+</script>

@@ -1,9 +1,19 @@
-baseurl = "/"
+#baseurl = "https://www.waldbademeister.in/"
+baseurl = "http://localhost:3000/"
 languageCode = "de-DE"
 languageLang = "de"
 title = "Die Waldbademeisterin"
+enableGitInfo = true
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "Verena Friedrich bietet regelmäßige Waldbadegänge durch den Schwarzwald an."
+  color_primary = "#4c625d"
+  color_secondary = "#4c625d"
+
+[permalinks]
+  posts = "/:slug"

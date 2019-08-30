@@ -2,5 +2,7 @@
     {{ partial "jumbotron" (dict "title" $.Title "subtitle" $.Params.subtitle "image" $.Params.image) }}
 
     {{ partial "content" (dict "content" $.Content) }}
+
+    {{ partial "contact-form" }}
 {{ end }}
 
