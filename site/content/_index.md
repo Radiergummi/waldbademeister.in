@@ -3,6 +3,10 @@ title: "Die Wald&shy;bade&shy;meisterin"
 subtitle: "Lernen Sie eine einzigartige Methode zur Entspannung kennen"
 image: "/img/forest.jpg"
 cta: "Termin vereinbaren"
+menu:
+  main:
+    name: "Waldbaden"
+    weight: 1
 ---
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
 magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 

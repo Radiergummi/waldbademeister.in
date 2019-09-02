@@ -12,6 +12,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
   description = "Verena Friedrich bietet regelmäßige Waldbadegänge durch den Schwarzwald an."
+  phone_number = "+49123123123123"
   color_primary = "#4c625d"
   color_secondary = "#4c625d"
 

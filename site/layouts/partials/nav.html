@@ -1,13 +1,9 @@
 <nav class="main-navigation">
-
-    <!--
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="logo" class="br0 db mb0 w-100"/>
-	</a>
-	-->
     <div class="navigation-links">
-        <a href="/" class="navigation-link">Waldbaden</a>
-        <a href="/ablauf" class="navigation-link">Ablauf</a>
-        <a href="/kontakt" class="navigation-link">Kontakt</a>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            <a class="navigation-link{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
+               href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
     </div>
 </nav>

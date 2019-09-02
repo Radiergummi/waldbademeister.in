@@ -10,11 +10,11 @@
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "{{ $.Site.Title }}",
+        "name": {{ $.Site.Title }},
         {{ if $.Params.image }}"image": {{ $.Params.image | absURL }},{{ end }}
         "@id": "",
         "url": {{ $.Site.BaseURL | absURL }},
-        "telephone": "",
+        "telephone": {{ $.Site.Params.phone_number }},
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",

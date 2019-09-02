@@ -14,10 +14,30 @@
     padding:         $spacing-base;
 
     .navigation-link {
+      position:        relative;
       padding:         $spacing-base ($spacing-base * 2);
       text-decoration: none;
       color:           var(--color-text);
 
+      &::after {
+        content:       '';
+        position:      absolute;
+        bottom:        0;
+        left:          50%;
+        transform:     translateX(-50%);
+        width:         $spacing-base * 0.25;
+        height:        $spacing-base * 0.25;
+        border-radius: $spacing-base * 0.25;
+        transition:    all var(--transition-duration-slow);
+      }
+
+      &.active::after {
+        background-color: currentColor;
+      }
+
+      &:not(.active):hover::after {
+        background-color: rgb(var(--color-gray));
+      }
     }
   }
 }

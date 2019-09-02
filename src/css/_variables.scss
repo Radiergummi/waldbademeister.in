@@ -1,4 +1,6 @@
-// SCSS variables
+/**
+ * SCSS variables
+ */
 $spacing-base:        1rem;
 $spacing-small:       0.5rem;
 $spacing-large:       1rem;
@@ -6,7 +8,12 @@ $spacing-large:       1rem;
 $border-radius-base:  2rem;
 $border-radius-small: 5px;
 
-// CSS variables
+// Maximum content width on the page
+$content-width:       $spacing-base * 56;
+
+/**
+ * CSS variables
+ */
 :root {
   --color-green:              76, 98, 93;
   --color-teal:               0, 150, 136;
@@ -46,5 +53,5 @@ $border-radius-small: 5px;
 
   --blur-amount:              20px;
 
-  --content-width:            #{$spacing-base * 56};
+  --content-width:            #{$content-width};
 }

@@ -4,10 +4,25 @@
   width:            100%;
   max-width:        var(--content-width);
   margin:           ($spacing-base * 2) auto;
+  padding:          0 $spacing-base * 0.5;
   background-color: rgb(var(--color-white));
 
   .form-field {
     width: 100%;
+  }
+
+  .form-field-recaptcha {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    padding: $spacing-base 0;
+  }
+
+  .form-actions {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    margin-top:      $spacing-base * 2;
   }
 }
 
@@ -16,14 +31,16 @@
   flex:             1 1 auto;
   display:          flex;
   flex-direction:   column;
-  border:           2px solid rgba(var(--color-primary), 0.5);
+  padding-top:      $spacing-base;
+  border:           2px solid rgb(var(--color-gray-light));
   border-radius:    7px;
   background-color: rgb(var(--color-white));
 
+  @media screen and (min-width: $content-width) {
+  }
+
   &:focus-within {
-    .field-label {
-      color: rgba(var(--color-black), 0.75);
-    }
+    border-color: rgb(var(--color-primary));
   }
 
   & + .form-field {
@@ -31,30 +48,53 @@
   }
 
   .field-label {
-    display:   block;
-    padding:   ($spacing-base * 0.25) $spacing-base;
-    font-size: 14px;
-    order:     1;
-    color:     rgb(var(--color-primary));
+    position:   absolute;
+    top:        $spacing-base * 0.5;
+    display:    block;
+    padding:    ($spacing-base * 0.25) $spacing-base;
+    font-size:  1.2rem;
+    order:      1;
+    color:      rgb(var(--color-gray));
+    cursor:     text;
+    transition: all var(--transition-duration-base);
   }
 
   .field-input {
     order:              2;
     flex:               1 1 auto;
     -webkit-appearance: none;
-    padding:            $spacing-base;
+    padding:            ($spacing-base * 0.5) $spacing-base;
     border:             none;
     background-color:   transparent;
+
+    &::-webkit-input-placeholder {
+      color:      transparent;
+      transition: all var(--transition-duration-base) 0;
+    }
 
     &:focus {
       border-color: rgba(var(--color-black), 0.75);
       outline:      none;
+
+      &::-webkit-input-placeholder {
+        color:      rgb(var(--color-gray));
+        transition: all var(--transition-duration-fast) var(--transition-duration-base);
+      }
+    }
+
+    &:not(:placeholder-shown) + .field-label,
+    &:focus + .field-label {
+      top:       0;
+      font-size: 14px;
+      color:     rgb(var(--color-primary));
     }
   }
 }
 
 textarea {
-  display:    block;
-  resize:     vertical;
-  min-height: $spacing-base * 6;
+  display:     block;
+  resize:      vertical;
+  min-height:  $spacing-base * 6;
+  max-height:  50vh;
+  font-family: var(--font-family-serif);
 }

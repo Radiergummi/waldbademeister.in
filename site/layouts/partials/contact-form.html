@@ -1,18 +1,25 @@
 <form class="contact-form form" netlify>
     <div class="form-field">
-        <input class="field-input" type="text" name="name" id="field-name" required>
+        <input class="field-input" type="text" name="name" id="field-name" placeholder="Erika Musterfrau" required>
         <label class="field-label" for="field-name">Name</label>
     </div>
 
     <div class="form-field">
-        <input class="field-input" type="email" name="email" id="field-email">
+        <input class="field-input" type="email" name="email" id="field-email" placeholder="erika@musterfrau.de">
         <label class="field-label" for="field-email">E-Mail-Adresse (optional)</label>
     </div>
 
     <div class="form-field">
-        <textarea class="field-input" name="message" id="field-message" required>
-
-        </textarea>
+        <textarea class="field-input" name="message" id="field-message" placeholder="Ihre Nachricht"
+                  required></textarea>
         <label class="field-label" for="field-message">Ihr Anliegen</label>
     </div>
+
+    <div class="form-field-recaptcha">
+        <div data-netlify-recaptcha="true"></div>
+    </div>
+
+    <footer class="form-actions">
+        <button class="button">Absenden</button>
+    </footer>
 </form>
