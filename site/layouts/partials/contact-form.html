@@ -1,4 +1,4 @@
-<form class="contact-form form" action="{{ $.Page.Permalink }}?success" name="Kontaktformular" data-netlify="true">
+<form class="contact-form form" action="{{ .Permalink | absURL }}?success" name="Kontaktformular" data-netlify="true">
     <div class="form-field">
         <input class="field-input" type="text" name="name" id="field-name" placeholder="Erika Musterfrau" required>
         <label class="field-label" for="field-name">Name</label>
