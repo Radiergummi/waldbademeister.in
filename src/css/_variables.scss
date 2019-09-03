@@ -42,8 +42,8 @@ $content-width:       $spacing-base * 56;
 
   --font-size-base:           1rem;
   --font-size-large:          1.25rem;
-  --font-size-title:          4rem;
-  --font-size-subtitle:       2.2rem;
+  --font-size-title:          3rem;
+  --font-size-subtitle:       1.2rem;
 
   --line-height-base:         1.8;
   --line-height-wide:         2;
@@ -56,4 +56,14 @@ $content-width:       $spacing-base * 56;
   --blur-amount:              20px;
 
   --content-width:            #{$content-width};
+
+  @media screen and (min-width: 400px) {
+    --font-size-title:    3.5rem;
+    --font-size-subtitle: 1.4rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    --font-size-title:    4rem;
+    --font-size-subtitle: 2.2rem;
+  }
 }

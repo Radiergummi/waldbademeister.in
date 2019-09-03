@@ -1,18 +1,24 @@
 .hero {
-  position:        relative;
-  flex:            0 1 100vh;
-  display:         flex;
-  width:           100%;
-  margin:          0 auto;
-  flex-direction:  column;
-  justify-content: center;
-  align-items:     center;
-  color:           #fff;
-  text-align:      center;
-  overflow:        hidden;
+  position:       relative;
+  flex:           0 1 100vh;
+  display:        flex;
+  width:          100%;
+  margin:         0 auto;
+  padding:        ($spacing-base * 8) $spacing-base 0 $spacing-base;
+  flex-direction: column;
+  align-items:    center;
+  color:          #fff;
+  text-align:     center;
+  overflow:       hidden;
+
+  @media screen and (min-width: 700px) {
+    padding:         0;
+    justify-content: center;
+  }
 
   .hero-title {
     font-size:   var(--font-size-title);
+    line-height: 1.2;
     margin:      0;
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
                  0 0 1px rgba(0, 0, 0, 0.1);
@@ -20,9 +26,13 @@
 
   .hero-subtitle {
     font-size:   var(--font-size-subtitle);
-    line-height: var(--line-height-base);
+    line-height: 1.2;
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
                  0 0 1px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 400px) {
+      line-height: var(--line-height-base);
+    }
   }
 
   .cta-container {
