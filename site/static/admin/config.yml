@@ -4,7 +4,7 @@ backend:
 display_url: "https://www.waldbademeister.in"
 site_url: "https://www.waldbademeister.in"
 logo_url: "https://www.waldbademeister.in/img/logo.svg"
-media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/images" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
