@@ -57,16 +57,9 @@ module.exports = {
       template: 'src/cms.html',
       inject:   false,
     }),
-    /*
-     new CopyWebpackPlugin([
-     {
-     from: 'site/static/images',
-     to:   path.resolve(__dirname, 'dist', 'img'),
-     },
-     ]),*/
     new ImageMinPlugin({
       externalImages: {
-        context:     'site', // Important! This tells the plugin where to "base" the paths at
+        context:     'site',
         sources:     glob.sync('site/static/images/**/*'),
         destination: 'dist/img',
         fileName:    '[name].[ext]', // (filePath) => filePath.replace('jpg', 'webp') is also possible
