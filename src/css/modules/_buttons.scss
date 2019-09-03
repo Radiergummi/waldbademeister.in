@@ -4,6 +4,10 @@ button {
   cursor:             pointer;
 }
 
+a.button {
+  text-decoration: none;
+}
+
 .button {
   padding:          $spacing-base ($spacing-base * 1.75);
   border-radius:    $border-radius-base;
@@ -15,6 +19,7 @@ button {
   box-shadow:       0 5px 35px rgba(0, 0, 0, 0.06),
                     0 1px 2px rgba(0, 0, 0, 0.05);
   transition:       all var(--transition-duration-base);
+  user-select:      none;
 
   &:hover {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12),
@@ -28,19 +33,6 @@ button {
   @supports (backdrop-filter: blur(var(--blur-amount))) {
     background-color: rgba(var(--color-green), 0.5);
     backdrop-filter:  blur(var(--blur-amount));
-  }
-
-  &-alt {
-    background-color: rgb(var(--color-white));
-    color:            rgb(var(--color-gray));
-
-    @supports (backdrop-filter: blur(var(--blur-amount))) {
-      background-color: rgba(var(--color-white), 0.5);
-
-      &:hover {
-        background-color: rgba(var(--color-white), 0.75);
-      }
-    }
   }
 
   &-icon {
@@ -60,6 +52,19 @@ button {
 
     @supports (backdrop-filter: blur(var(--blur-amount))) {
       background-color: rgba(var(--color-black), 0.5);
+    }
+  }
+
+  &-alt {
+    background-color: rgb(var(--color-white));
+    color:            rgb(var(--color-gray));
+
+    @supports (backdrop-filter: blur(var(--blur-amount))) {
+      background-color: rgba(var(--color-white), 0.5);
+
+      &:hover {
+        background-color: rgba(var(--color-white), 0.75);
+      }
     }
   }
 }

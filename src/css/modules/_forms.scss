@@ -48,15 +48,16 @@
   }
 
   .field-label {
-    position:   absolute;
-    top:        $spacing-base * 0.5;
-    display:    block;
-    padding:    ($spacing-base * 0.25) $spacing-base;
-    font-size:  1.2rem;
-    order:      1;
-    color:      rgb(var(--color-gray));
-    cursor:     text;
-    transition: all var(--transition-duration-base);
+    position:    absolute;
+    top:         $spacing-base * 0.5;
+    display:     block;
+    padding:     ($spacing-base * 0.25) $spacing-base;
+    font-size:   1.2rem;
+    order:       1;
+    color:       rgb(var(--color-gray));
+    cursor:      text;
+    transition:  all var(--transition-duration-base);
+    user-select: none;
   }
 
   .field-input {
@@ -68,8 +69,9 @@
     background-color:   transparent;
 
     &::-webkit-input-placeholder {
-      color:      transparent;
-      transition: all var(--transition-duration-base) 0;
+      color:       transparent;
+      transition:  all var(--transition-duration-base) 0;
+      user-select: none;
     }
 
     &:focus {

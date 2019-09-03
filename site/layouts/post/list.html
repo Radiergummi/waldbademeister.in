@@ -1,0 +1,17 @@
+{{ define "main" }}
+    {{ partial "jumbotron" (dict "image" .Page.Params.image "title" .Page.Title) }}
+    {{ partial "content" (dict "content" .Content) }}
+
+    <section class="blog-posts">
+      <nav class="blog-posts-list">
+          {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+              <article class="blog-post-list-item">
+                {{ .Render "li" }}
+              </article>
+          {{ end }}
+      </nav>
+
+      {{ partial "pagination" . }}
+    </section>
+
+{{end}}

@@ -1,6 +1,6 @@
 ---
 title: Ablauf
-image: /img/fern.jpg
+image: /img/birds.jpg
 menu:
   main:
     weight: 2

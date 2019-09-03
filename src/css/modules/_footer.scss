@@ -2,6 +2,7 @@
   background-color:    rgb(var(--color-green));
   background-position: center center;
   background-size:     cover;
+  user-select:         none;
 
   .footer-navigation {
     display:         flex;

@@ -2,11 +2,8 @@
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
   <body>
-
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
     {{ block "main" . }}{{ end }}
-
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
     {{ $script := .Site.Data.webpack.main }}

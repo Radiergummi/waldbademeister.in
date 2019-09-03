@@ -1,9 +1,19 @@
 baseurl = "https://www.waldbademeister.in/"
-# baseurl = "http://localhost:3000/"
+#baseurl = "http://localhost:3000/"
 languageCode = "de-DE"
 languageLang = "de"
 title = "Die Waldbademeisterin"
+
+# Google Analytics Tracking ID
+googleAnalytics = "UA-33722453-7"
+
 enableGitInfo = true
+summaryLength = 30
+enableRobotsTXT = true
+
+# Pagination
+paginate = 9
+paginatePath = "seite"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:

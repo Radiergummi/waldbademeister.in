@@ -1,0 +1,83 @@
+.blog-posts {
+  width:     100%;
+  max-width: var(--content-width);
+  margin:    0 auto ($spacing-base * 6);
+
+  .blog-posts-list {
+    display:   flex;
+    flex-wrap: wrap;
+    padding:   $spacing-base 0;
+
+    .blog-post-list-item {
+      flex:    0 1 calc(100% / 3);
+      padding: $spacing-base;
+    }
+  }
+
+  .post-link {
+    display:          block;
+    text-decoration:  none;
+    color:            inherit;
+    background-color: rgb(var(--color-white-bright));
+    border-radius:    $spacing-base * 0.5;
+    box-shadow:       0 0 1px rgba(0, 0, 0, 0.1),
+                      0 2px 5px rgba(0, 0, 0, 0.05),
+                      0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow:         hidden;
+    transition:       all var(--transition-duration-slow);
+
+    .post-link-header {
+      display:                    flex;
+      flex-direction:             column;
+      height:                     $spacing-base * 8;
+      border-radius:              inherit;
+      border-bottom-left-radius:  0;
+      border-bottom-right-radius: 0;
+      background-size:            cover;
+      background-position:        top center;
+      background-repeat:          no-repeat;
+    }
+
+    .post-link-header-content {
+      display:          flex;
+      flex-direction:   column;
+      justify-content:  space-between;
+      flex:             1 1 auto;
+      padding:          $spacing-base;
+      border-radius:    inherit;
+      background-color: rgba(var(--color-black), 0.05);
+      color:            rgb(var(--color-white));
+      text-shadow:      0 0 8px rgba(var(--color-black), 0.2);
+      transition:       all var(--transition-duration-slow);
+    }
+
+    &:hover {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.3),
+                  0 2px 8px rgba(0, 0, 0, 0.1),
+                  0 8px 45px rgba(0, 0, 0, 0.15);
+
+      .post-link-header-content {
+        text-shadow:     none;
+        backdrop-filter: blur(var(--blur-amount));
+      }
+    }
+
+    .post-link-title {
+      margin: 0;
+    }
+
+    .post-link-teaser {
+      margin:  0;
+      padding: $spacing-base;
+    }
+
+    .post-link-footer {
+      padding:    0 $spacing-base;
+      text-align: right;
+    }
+
+    .post-link-read-more {
+      color: rgb(var(--color-gray))
+    }
+  }
+}

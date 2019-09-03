@@ -1,6 +1,6 @@
 ---
 title: Datenschutz
-image: /img/forest.jpg
+image: /img/grass.jpg
 ---
 ## Einleitung
 Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten 

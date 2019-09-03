@@ -13,4 +13,8 @@ function init(global) {
       // global.scrollTo(0, window.innerHeight);
     });
   }
+
+  Array
+    .from(global.document.querySelectorAll('[data-href]'))
+    .map((button) => button.addEventListener('click', () => global.location.href = button.dataset.href));
 }

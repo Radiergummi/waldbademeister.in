@@ -20,4 +20,12 @@
     max-width: var(--content-width);
     padding:   0 $spacing-base;
   }
+
+  .jumbotron-meta {
+    font-size: 1.2rem;
+
+    .jumbotron-meta-item + .jumbotron-meta-item::before {
+      content: ' · ';
+    }
+  }
 }

@@ -1,0 +1,15 @@
+<a href="{{ $.RelPermalink }}" class="post-link">
+    <header class="post-link-header" style="background-image:url({{ $.Params.image }})">
+        <div class="post-link-header-content">
+            <h2 class="post-link-title">{{ $.Title }}</h2>
+            <time class="post-link-date" datetime="{{ $.Date.Format "2006-01-02T15:04:05-0700" }}">
+                {{ $.Date.Format "02.01.2006" }}
+            </time>
+        </div>
+    </header>
+    <p class="post-link-teaser">{{ $.Summary }}</p>
+    <footer class="post-link-footer">
+        <p class="post-link-read-more">Weiterlesen&nbsp;&nbsp;→</p>
+    </footer>
+</a>
+

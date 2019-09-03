@@ -1,14 +1,16 @@
 @import "functions/_color-functions.scss";
 @import "fonts/_hk-grotesk.scss";
 @import "_variables.scss";
-@import "modules/animations.scss";
+@import "modules/_animations.scss";
 @import "modules/_buttons.scss";
 @import "modules/_navigation.scss";
 @import "modules/_footer.scss";
 @import "modules/_hero.scss";
-@import "modules/jumbotron.scss";
+@import "modules/_jumbotron.scss";
 @import "modules/_content.scss";
-@import "modules/forms.scss";
+@import "modules/_forms.scss";
+@import "modules/_blog.scss";
+@import "modules/_pagination.scss";
 
 * {
   box-sizing: border-box;
@@ -28,4 +30,10 @@ body {
   min-height:     100vh;
   display:        flex;
   flex-direction: column;
+}
+
+::selection {
+  background-color: rgb(var(--color-primary));
+  color:            rgb(var(--color-white));
+  text-shadow:      none;
 }
