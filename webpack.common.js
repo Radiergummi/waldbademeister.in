@@ -69,7 +69,7 @@ module.exports = {
         context:     'site', // Important! This tells the plugin where to "base" the paths at
         sources:     glob.sync('site/static/images/**/*'),
         destination: 'dist/img',
-        fileName:    '[name].min.[ext]', // (filePath) => filePath.replace('jpg', 'webp') is also possible
+        fileName:    '[name].[ext]', // (filePath) => filePath.replace('jpg', 'webp') is also possible
       },
       plugins:        [
         imageMinMozJpeg({quality: 75}),
