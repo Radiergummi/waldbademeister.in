@@ -1,0 +1,30 @@
+.banner {
+  display:                   flex;
+  margin:                    $spacing-base * 2 auto;
+  padding:                   $spacing-base ($spacing-base * 2);
+  border-radius:             $spacing-base * 0.5;
+  line-height: 1.8;
+  box-shadow:                0 2px 5px rgba(var(--color-black), 0.1),
+                             0 8px 20px rgba(var(--color-black), 0.1);
+  opacity:                   0;
+  animation:                 appear 1s;
+  animation-timing-function: ease-in;
+  animation-delay:           1s;
+  animation-duration:        0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode:       forwards;
+
+  .banner-text {
+    margin: 0;
+  }
+
+  &-success {
+    background-color: rgb(var(--color-teal));
+    color:            rgb(var(--color-white));
+  }
+
+  &-error {
+    background-color: rgb(var(--color-red));
+    color:            rgb(var(--color-white));
+  }
+}

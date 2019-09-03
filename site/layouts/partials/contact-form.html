@@ -1,4 +1,5 @@
 <form class="contact-form form" action="{{ .Permalink | absURL }}?success" name="Kontaktformular" data-netlify="true">
+    <div id="banner-portal"></div>
     <div class="form-field">
         <input class="field-input" type="text" name="name" id="field-name" placeholder="Erika Musterfrau" required>
         <label class="field-label" for="field-name">Name</label>
@@ -23,3 +24,8 @@
         <button class="button">Absenden</button>
     </footer>
 </form>
+<template id="banner-success">
+    <div class="banner banner-success" role="banner">
+        <p class="banner-text">Vielen Dank! Ihre Nachricht wird zugestellt.</p>
+    </div>
+</template>
